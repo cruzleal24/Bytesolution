@@ -4,8 +4,70 @@
     box-sizing: border-box;
 }
 %subtitulos{
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 600;
+    text-align: center;
+    font-family: sans-serif
+}
+
+%botones{
+    background-color: #03037c;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 4px 0 #494949;
+}
+%hoverboton{
+    background-color: #5a85fd;
+    color: #000;
+}
+
+
+.head{
+    background-color: #a09f9a;
+    width: 100%;
+    .content-head{
+    display: flex;
+    flex-direction: row;
+    line-height: 90px;
+    justify-content: space-between;
+    img{
+        border-radius: 3px;
+        width: 100px;
+    }
+    .menu-principal{
+    .menu{
+        display: flex;
+        flex-direction: row;
+        
+        gap: 0 1rem;
+        li{
+            list-style: none;
+                a{
+                    
+                @extend %botones;
+                padding: 10px 8px;
+                text-decoration: none;
+                &:hover{
+                    @extend %hoverboton;
+                }
+                }
+            }
+        }
+    }
+    .sea{
+        input[type=search]{
+            border: none;
+            height: 30px;
+            font-size: 16px;
+        }
+        input[type=submit]{
+            padding: 6px 10px;
+            
+        }
+
+    }
+
+}
 }
 .subtitulo{
     @extend %subtitulos;

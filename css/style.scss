@@ -20,55 +20,62 @@
     background-color: #5a85fd;
     color: #000;
 }
-
-
-.head{
-    background-color: #a09f9a;
-    width: 100%;
-    .content-head{
+.header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.568) 0%,
+     rgba(251, 194, 235, 0.568) 100%),url(../Media/Img/descktop-code.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     background-position: center;
+.menu{
+    position: fixed;
+    width: 100vw;
+    height: 110px;
     display: flex;
-    flex-direction: row;
-    line-height: 90px;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    background-color: rgba(73, 73, 73, 0.6);
+
     img{
-        border-radius: 3px;
-        width: 100px;
+
     }
     .menu-principal{
-    .menu{
+        height: 100%;
         display: flex;
-        flex-direction: row;
-        
-        gap: 0 1rem;
-        li{
-            list-style: none;
-                a{
-                    
-                @extend %botones;
-                padding: 10px 8px;
-                text-decoration: none;
-                &:hover{
-                    @extend %hoverboton;
-                }
-                }
-            }
-        }
-    }
-    .sea{
-        input[type=search]{
-            border: none;
-            height: 30px;
-            font-size: 16px;
-        }
-        input[type=submit]{
-            padding: 6px 10px;
-            
+        justify-content:space-evenly;
+        align-items: center;
+        width: 40%;
+        a{
+            padding: 5px 12px;
+            background-color: #fff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
         }
 
+    }
+    .search-head{
+
+    }
+}
+.title{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    h1{
+        font-size: 42px;
     }
 
 }
 }
-.subtitulo{
-    @extend %subtitulos;
+
+.content{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
 }
